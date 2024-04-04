@@ -10,7 +10,7 @@
   <div class="card-header">
     Compteur d'évolution Stake
   </div>
-  <div class="card-body">
+  <div class="card-body" id="body-question">
     <h5 class="card-title">Entrez votre montant total de pari <strong>en euros</strong> et validez</h5>
     <p class="card-text">Votre montant total de paris se trouve dans <i>Profil > statistiques</i> dans le cadre intitulé "<strong>misé</strong>" </p>
     <div class="mb-5 mt-5">
@@ -21,5 +21,10 @@
 </div>
 
     </div>
+    <script>
+      document.QuerySelector("#calc").addEventListener("click", () => {
+        document.QuerySelector("#body-question").classList.add("d-none");
+      }
+    </script>
   </body>
 </html>
